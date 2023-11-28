@@ -1,0 +1,68 @@
+#container{
+    display: grid;
+    grid-template-rows: 64px calc(100vh - 64px) 128px 100vh 100px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'hd hd nav nav'
+    'sc sc sc sc '
+    'dv dv dv dv'
+    'sc2 sc2  sc3 sc3'
+    'ft ft ft ft';
+    background-color: black;
+}
+header {
+    grid-area: hd;
+    background-color: hotpink;
+}
+#hero {
+    grid-area: sc;
+    background-image: url(/img/stock_man.jpg);
+    background-size: cover;
+}
+div {
+    grid-area: dv;
+    background-color: blue;
+}
+footer {
+    grid-area: ft;
+    background-color: rosybrown;
+    display: flex;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#section2 {
+    grid-area: sc2;
+    background-image: url(/img/sam_sulek.png);
+    background-size: cover;
+}
+#section3 {
+    grid-area: sc3;
+    background-image: url(/img/RM-MIKE-O-HEARN-OP.jpg);
+    background-size: cover;
+}
+nav {
+    grid-area: nav;
+    background-color: blanchedalmond;
+}
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.texter {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: honeydew;
+    text-shadow: 2px 2px 100px;
+    background-color: rgba(105, 104, 104, 0.75);
+}
+
