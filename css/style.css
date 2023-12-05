@@ -1,14 +1,16 @@
 #container{
     display: grid;
-    grid-template-rows: 64px calc(100vh - 64px) 128px 100vh 100px;
-    grid-template-columns: 25% 25% 25% 25%;
+    height: calc(100vh);
+    grid-template-rows: 64px calc(100vh - 64px) 128px 100vh 1fr;
+    grid-template-columns: 25% 25% 25% 1fr;
     grid-template-areas: 
-    'hd hd nav nav'
+    'hd hd hd nav'
     'sc sc sc sc '
     'dv dv dv dv'
     'sc2 sc2  sc3 sc3'
     'ft ft ft ft';
     background-color: black;
+
 }
 header {
     grid-area: hd;
@@ -22,6 +24,7 @@ header {
 div {
     grid-area: dv;
     background-color: blue;
+    
 }
 footer {
     grid-area: ft;
@@ -65,4 +68,3 @@ nav {
     text-shadow: 2px 2px 100px;
     background-color: rgba(105, 104, 104, 0.75);
 }
-

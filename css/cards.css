@@ -1,38 +1,47 @@
+body {
+    margin: 0;
+    background-color: #1abc9c;
+}
+
 #container {
-    display: grid;
-    grid-template-columns: 35% 30% 35%;
-    grid-template-rows: 40px 400px 400px 40px;
-    grid-template-areas: 
-    'hd hd nv'
-    'sec sec sec'
-    'sec sec sec'
-    'ft ft ft'
-    ;
- }
- header {
-     grid-area: hd;
-     background-color: hotpink;
- }
- nav {
-     grid-area: nv;
-     background-color: aqua;
- 
- }
- 
- #card-section {
-     grid-area:sec;
- }
- 
- 
- #card-section div {
-     display: flex;
-     height:100px;
-     background-color: red;
-     grid-template-rows: 40% 60%;
-     gap: 5px;
- }
- footer {
-     grid-area: ft;
-     background-color: honeydew;
- }
- 
+  display: grid;
+  height: calc(100vh);
+  grid-template-columns: 35% 30% 1fr;
+  grid-template-rows: 40px 400px 400px 40px;
+  grid-template-areas:
+    "hd hd nv"
+    "sec sec sec"
+    "sec sec sec"
+    "ft ft ft";
+}
+header {
+  grid-area: hd;
+  background-color: #1abc9c;
+}
+nav {
+  grid-area: nv;
+  background-color: #23ffd3;
+}
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#card-section {
+  grid-area: sec;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#card-section div {
+  width: calc((100% - 10px) / 3);
+  height: 400px;
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
+footer {
+  grid-area: ft;
+  background-color: honeydew;
+}
