@@ -1,11 +1,11 @@
 body {
     margin: 0%;
-    background-color: black;
+
 }
 #container{
     display: grid;
     grid-template-columns: 50vw 50vw ;
-    grid-template-rows:100px calc(100vh - 100px) 600px 100px ;
+    grid-template-rows:100px calc(100vh - 100px) 600px 100px;
     grid-template-areas: 
     'hd hd'
     'sc sc'
@@ -13,8 +13,11 @@ body {
     'ft ft';
 }
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: hd;
-    background-color: pink;
+    background-color: #1abc9c;
 }
 section {
     grid-area: sc;
@@ -32,7 +35,7 @@ section {
 }
 #länk2 {
     grid-area: länk2;
-    background-color: crimson;
+    background-color: #1abc9c;
 }
 #cardsection {
     display: flex;
@@ -40,6 +43,23 @@ section {
     gap: 5px;
 }
 footer {
+    display: flex;
     grid-area: ft;
     background-color: hotpink;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+}
+.texter {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: honeydew;
+    text-shadow: 2px 2px 100px;
 }

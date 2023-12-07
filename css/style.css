@@ -4,7 +4,7 @@ body {
 #container{
     display: grid;
     height: calc(100vh);
-    grid-template-rows: 64px calc(100vh - 64px) 128px 100vh 100px;
+    grid-template-rows: 64px calc(100vh - 64px) 500px 100vh 100px;
     grid-template-columns: 25% 25% 25% 1fr;
     grid-template-areas: 
     'hd hd hd nav'
@@ -16,6 +16,9 @@ body {
 
 }
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: hd;
     background-color: #1abc9c;
 }
@@ -31,7 +34,7 @@ div {
 }
 footer {
     grid-area: ft;
-    background-color: rosybrown;
+    background-color: white;
     display: flex;
     font-family: cursive;
     justify-content: center;
@@ -42,12 +45,12 @@ footer {
 }
 #section2 {
     grid-area: sc2;
-    background-image: url(/img/sam_sulek.png);
+    background-color: #19b394;
     background-size: cover;
 }
 #section3 {
     grid-area: sc3;
-    background-image: url(/img/RM-MIKE-O-HEARN-OP.jpg);
+    background-color: #1abc9c;
     background-size: cover;
 }
 nav {
@@ -62,6 +65,10 @@ nav {
     font-family: cursive;
     text-transform: uppercase;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 .texter {
     padding: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,18 +78,19 @@ nav {
     text-shadow: 2px 2px 100px;
     background-color: rgba(105, 104, 104, 0.75);
 }
-.menu {
+ .menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 .menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
+    margin: 0px 1rem;
+    overflow: hidden
 }
-.hamburger-menu {
+
+ /* .hamburger-menu {
     display: flex;
     height: 100%;
     width: 50px;
@@ -91,9 +99,11 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 #menu-toggle { 
     display: none;
 }
+
 .hamburger-button-toggle {
     display: none;
     height: 100%;
@@ -103,18 +113,19 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .hamburger-menu,
 .hamburger-menu::before,
 .hamburger-menu::after {
     display: block;
-    background-color: #fff;
-    position: right;
+    background-color: #fff; 
     position: absolute;
     height: 5px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.25, 1, 0.32, 1);
     border-radius: 2px;
 }
+
 .hamburger-menu::before {
     content: '';
     margin-top: -8px;
@@ -123,10 +134,12 @@ nav {
     content: '';
     margin-top: 8px;
 }
+
 .hamburger-button-toggle:checked + .hamburger-menu-container .hamburger-menu::before {
     margin-top: 0px;
     transform: rotate(405deg);
 } 
+
 .hamburger-button-toggle:checked + .hamburger-menu-container .hamburger-menu::after {
     margin-top: 0px;
     transform: rotate(-405deg);
@@ -174,4 +187,4 @@ background-color: #1abc9c;
       .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
       }
-}
+}   */
