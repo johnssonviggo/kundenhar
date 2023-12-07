@@ -17,11 +17,11 @@ body {
 }
 header {
     grid-area: hd;
-    background-color: hotpink;
+    background-color: #1abc9c;
 }
 #hero {
     grid-area: sc;
-    background-image: url(/img/stock_man.jpg);
+    background-image: url(/img/markiplier_yoga.jpg);
     background-size: cover;
 }
 div {
@@ -52,7 +52,7 @@ footer {
 }
 nav {
     grid-area: nav;
-    background-color: blanchedalmond;
+    background-color: #19b394;
 }
 .company {
     display: flex;
@@ -70,4 +70,108 @@ nav {
     color: honeydew;
     text-shadow: 2px 2px 100px;
     background-color: rgba(105, 104, 104, 0.75);
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+.hamburger-menu {
+    display: flex;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#menu-toggle { 
+    display: none;
+}
+.hamburger-button-toggle {
+    display: none;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger-menu,
+.hamburger-menu::before,
+.hamburger-menu::after {
+    display: block;
+    background-color: #fff;
+    position: right;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.25, 1, 0.32, 1);
+    border-radius: 2px;
+}
+.hamburger-menu::before {
+    content: '';
+    margin-top: -8px;
+}
+.hamburger-menu::after {
+    content: '';
+    margin-top: 8px;
+}
+.hamburger-button-toggle:checked + .hamburger-menu-container .hamburger-menu::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+} 
+.hamburger-button-toggle:checked + .hamburger-menu-container .hamburger-menu::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+#menu-toggle:checked + .hamburger-menu-container .hamburger-menu  {
+background-color: #1abc9c;
+}
+
+@media (max-width:700px) {
+    .hamburger-menu-container {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0px;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+      }
+      .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
 }
