@@ -45,3 +45,39 @@ footer {
   grid-area: ft;
   background-color: honeydew;
 }
+
+
+
+/* img {
+  height: 100%;
+  width: 40%;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+#bilder  {
+grid-area: dv;
+background-color: #1abc9c;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+justify-content: space-evenly;
+padding: 20px;
+
+
+}
+#bilder div {
+  height: 450px;
+  width: calc((100% - 10px) / 2);
+  
+
+} */
+/* #section2 {
+  grid-area: sc2;
+  background-color: #19b394;
+  background-size: cover;
+}
+#section3 {
+  grid-area: sc3;
+  background-color: #19b394;
+  background-size: cover;
+ } */

@@ -18,10 +18,6 @@
           <li><a href="#">Yoga</a></li>
         </ul>
       </nav>
-      <div id="card-section">
-        <img class="pictures" src="/img/thai.boba_.webp" alt="boba tea">
-        <img class="pictures" src="/img/yoga-instructor.jpg" alt="yoga instructor">
-      </div>
       <footer><a href="/cards.html">about us</a></footer>
       <section id="hero"></section>
       <section id="section2">

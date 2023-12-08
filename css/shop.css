@@ -4,7 +4,7 @@ body {
 }
 #container{
     display: grid;
-    grid-template-columns: 50vw 50vw ;
+    grid-template-columns: 50% 50% ;
     grid-template-rows:100px calc(100vh - 100px) 600px 100px;
     grid-template-areas: 
     'hd hd'
