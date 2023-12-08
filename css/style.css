@@ -23,8 +23,14 @@ body {
   }
   #hero {
     grid-area: sc;
-    background-image: url(/img/markiplier_yoga.jpg);
-    background-size: cover;
+    background-color: black;
+  
+  }
+  #hero img {
+    opacity:  0.5;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   #card-section {
     grid-area: dv;
@@ -40,14 +46,15 @@ body {
     width: calc((100% - 10px) / 2);
   } 
   .pictures {
-        transition: transform .2s  ;
+        transition: transform .2s;
         height: 100%;
         width: 40%;
         justify-content: space-between;
         border-radius: 20px;
+        object-fit: cover;
   }
   .pictures:hover {
-    transform:scale(1.05) ;
+    transform: scale(1.05);
   }
   footer {
     grid-area: ft;
@@ -88,8 +95,6 @@ body {
     font-size: x-large;
     font-weight: 600;
     color: honeydew;
-    text-shadow: 2px 2px 100px;
-    background-color: rgba(105, 104, 104, 0.75);
   }
   nav {
       display: flex;
@@ -119,7 +124,7 @@ body {
         list-style-type: none;
         padding: 10px;
         font-size: large;
-      margin-top: 0;
+        margin-top: -10px;
   }
   .dropdown:hover .dropdown-content {
       display: block;
