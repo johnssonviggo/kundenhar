@@ -4,7 +4,7 @@ body {
 #container {
   display: grid;
   height: calc(100vh);
-  grid-template-rows: 64px calc(100vh - 64px) 500px 100vh 100px;
+  grid-template-rows: 110px calc(100vh - 110px) 500px 100vh 100px;
   grid-template-columns: 25% 25% 25% 1fr;
   grid-template-areas:
     "hd hd hd nav"
@@ -83,25 +83,24 @@ nav {
     
 }
 .dropdown {
-    display: none;
+    display: flex;
     position:relative;
     display: inline-block;
-    transition: linear 2s;
     align-items: right;
+    margin-top: 0;
 }
 .dropdown-content {
     display: none;
     text-align: center;
     flex-direction: column;
-    cursor: pointer;
     position: absolute;
     background-color: #1abc9c;
     min-width: 100px;
     z-index: 1;
     list-style-type: none;
     padding: 10px;
-    transition: linear 2s;
     font-size: large;
+    margin-top: 0;
 }
 .dropdown:hover .dropdown-content {
     display: block;
