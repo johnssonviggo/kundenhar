@@ -11,6 +11,7 @@ body {
     'sc sc'
     'länk1 länk2'
     'ft ft';
+    background-color: darkgrey;
 }
 header {
     display: flex;
@@ -46,7 +47,10 @@ header {
 }
 section {
     grid-area: sc;
-    background-color: honeydew;
+    background-image: url(/img/yoga_meditation_hero.jpg);
+    display: flex;
+    background-size: cover;
+    opacity: 0.6;
 }
 #länk1 {
     grid-area: länk1;
