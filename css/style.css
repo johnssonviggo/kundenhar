@@ -7,7 +7,7 @@ body {
     grid-template-rows: 110px calc(100vh - 110px) 500px 100vh 100px;
     grid-template-columns: 25% 25% 25% 1fr;
     grid-template-areas:
-      "hd hd hd nav"
+      "hd hd hd hd"
       "sc sc sc sc "
       "dv dv dv dv"
       "sc2 sc2  sc3 sc3"
@@ -16,6 +16,7 @@ body {
   }
   header {
     display: flex;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     grid-area: hd;
@@ -60,12 +61,8 @@ body {
     grid-area: ft;
     background-color: #2F8A78;
     display: flex;
-    font-family: cursive;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
-    font-weight: 900;
-    text-transform: uppercase;
   }
   #section2 {
     grid-area: sc2;
@@ -77,34 +74,23 @@ body {
     background-color: #2F574F;
     background-size: cover;
    }
-  .company {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-family: cursive;
-    text-transform: uppercase;
-  }
-  a {
+  .text_w_link {
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
     color: black;
     text-decoration: none;
   }
+  .text_w_link_dropdown {
+    color: black;
+    text-decoration: none;
+}
   .texter {
     padding: 5px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
     font-weight: 600;
     color: honeydew;
-  }
-  nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      align-items: right;
-      grid-area: nav;
-      background-color: #1abc9c;
-      width: 50px;
-      
   }
   .dropdown {
       display: flex;
@@ -131,4 +117,58 @@ body {
   .dropdown:hover .dropdown-content {
       display: block;
   }
+
   
+  
+  
+  
+  #container1{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows:110px calc(100vh - 100px) 600px 100px;
+    grid-template-areas: 
+    'hd hd'
+    'sc sc'
+    'länk1 länk2'
+    'ft ft';
+    background-color: darkgrey;
+}
+.meditation_yoga {
+  grid-area: sc;
+  background-image: url(/img/yoga_meditation_hero.jpg);
+  background-position: center;
+  display: flex;
+  background-size: cover;
+  opacity: 0.6;
+}
+#länk1 {
+  grid-area: länk1;
+  background-color: #2F574F;
+  height: 600px;
+  width: 100% / 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 45px;
+  
+}
+#länk2 {
+  grid-area: länk2;
+  background-color: #2F574F;
+  height: 600px;
+  width: 100% / 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 45px;
+}
+a .img {
+  transition: transform .2s;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+a .img:hover {
+  transform: scale(1.05);
+}
