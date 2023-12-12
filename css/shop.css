@@ -15,10 +15,17 @@ body {
 }
 header {
     display: flex;
+    gap: 100px;
     justify-content: center;
-    text-align: center; 
+    align-items: center;
     grid-area: hd;
     background-color: #1abc9c;
+}
+.text_w_link {
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+
 }
 .dropdown {
     display: flex;
@@ -48,6 +55,7 @@ header {
 section {
     grid-area: sc;
     background-image: url(/img/yoga_meditation_hero.jpg);
+    background-position: center;
     display: flex;
     background-size: cover;
     opacity: 0.6;

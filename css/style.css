@@ -34,7 +34,7 @@ body {
   }
   #card-section {
     grid-area: dv;
-    background-color: #1abc9c;
+    background-color: #2F8A78;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -58,7 +58,7 @@ body {
   }
   footer {
     grid-area: ft;
-    background-color: #17947b;
+    background-color: #2F8A78;
     display: flex;
     font-family: cursive;
     justify-content: center;
@@ -69,12 +69,12 @@ body {
   }
   #section2 {
     grid-area: sc2;
-    background-color: #16a387;
+    background-color: #2F574F;
     background-size: cover;
   }
   #section3 {
     grid-area: sc3;
-    background-color: #16a387;
+    background-color: #2F574F;
     background-size: cover;
    }
   .company {
