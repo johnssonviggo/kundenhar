@@ -172,3 +172,34 @@ a .img {
 a .img:hover {
   transform: scale(1.05);
 }
+
+#container2 {
+  display: grid;
+  width: 100vw;
+  grid-template-rows: 110px 500px 176px  ;
+  grid-template-areas:
+    "hd hd hd"
+    "sec sec sec"
+    "ft ft ft";
+}
+
+#employees {
+  grid-area: sec;
+  background-color: #2F574F;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 50px;
+  object-fit: cover;
+}
+
+#employees img {
+  height: 400px;
+  width: 75%;
+  border-radius: 20px;
+}
+#employees img:hover {
+  transform: scale(1.05);
+}
