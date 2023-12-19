@@ -4,7 +4,7 @@ body {
   #container {
     display: grid;
     height: calc(100vh);
-    grid-template-rows: 110px calc(100vh - 110px) 500px 100vh 100px;
+    grid-template-rows: 110px calc(100vh - 110px) 500px calc(100vh - 100px) 100px;
     grid-template-columns: 25% 25% 25% 1fr;
     grid-template-areas:
       "hd hd hd hd"
@@ -22,16 +22,22 @@ body {
     grid-area: hd;
     background-color: #1abc9c;
   }
-  #hero {
+  #hero-image {
     grid-area: sc;
     background-color: black;
   
   }
-  #hero img {
+  #hero-image img {
     opacity:  0.6;
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  section .homepage-headers {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: honeydew;
   }
   #card-section {
     grid-area: dv;
@@ -59,7 +65,7 @@ body {
   }
   footer {
     grid-area: ft;
-    background-color: #2F8A78;
+    background-color: #1abc9c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +75,7 @@ body {
     background-color: #2F574F;
     background-size: cover;
   }
-  #section3 {
+  #section3  {
     grid-area: sc3;
     background-color: #2F574F;
     background-size: cover;
@@ -96,7 +102,6 @@ body {
       display: flex;
       position:relative;
       display: inline-block;
-      align-items: right;
       margin-top: 0;
     }
     .dropdown-content {
@@ -145,7 +150,7 @@ body {
   grid-area: länk1;
   background-color: #2F574F;
   height: 600px;
-  width: 100% / 2;
+  width:100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -156,7 +161,7 @@ body {
   grid-area: länk2;
   background-color: #2F574F;
   height: 600px;
-  width: 100% / 2;
+  width: 1fr ;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -173,10 +178,12 @@ a .img:hover {
   transform: scale(1.05);
 }
 
+
+
 #container2 {
   display: grid;
-  width: 100vw;
-  grid-template-rows: 110px 500px 176px  ;
+  width: 100%;
+  grid-template-rows: 110px 500px calc(100vh - 610px);
   grid-template-areas:
     "hd hd hd"
     "sec sec sec"
@@ -189,15 +196,15 @@ a .img:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding-inline: 50px;
+  padding-inline: 30px;
   object-fit: cover;
 }
 
 #employees img {
   height: 400px;
-  width: 75%;
+  width: 100%;
   border-radius: 20px;
 }
 #employees img:hover {
